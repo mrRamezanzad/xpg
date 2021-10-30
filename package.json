@@ -1,0 +1,41 @@
+{
+  "name": "xpg",
+  "version": "1.0.6",
+  "description": "a module to help auto generating correct structure of rest services in express (model-view-controller-service).",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "rest",
+    "API",
+    "restful",
+    "controller",
+    "service",
+    "bootstrap",
+    "structure",
+    "auto-generate",
+    "generater",
+    "express",
+    "expres-generater",
+    "rest-generater"
+  ],
+  "author": "mrRamezanzad",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^10.0.0",
+    "yargs": "^17.2.1"
+  },
+  "bin": {
+    "xpg": "bin/index.js"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrRamezanzad/express-boilerplate-rest-api-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrRamezanzad/express-boilerplate-rest-api-generator/issues"
+  },
+  "homepage": "https://github.com/mrRamezanzad/express-boilerplate-rest-api-generator#readme"
+}
