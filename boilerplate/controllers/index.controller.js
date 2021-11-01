@@ -6,24 +6,24 @@ const indexService = require('../services/index.service')
 
 router
 
-  .post('/indexs', asyncHandler((req, res, next) => {
-    indexService.create()
+  .post('/indexs', asyncHandler(async (req, res, next) => {
+    await indexService.create()
   }))
 
   .get('/indexs', asyncHandler(async (req, res, next) => {
-    indexService.findAll()
+    await indexService.findAll()
   }))
 
   .get('/indexs/:id', asyncHandler(async (req, res, next) => {
-    indexService.findOne()
+    await indexService.findOne()
   }))
 
   .patch('/indexs/:id', asyncHandler(async (req, res, next) => {
-    indexService.update()
+    await indexService.update()
   }))
 
   .delete('/indexs/:id', asyncHandler(async (req, res, next) => {
-    indexService.delete()
+    await indexService.delete()
   }))
 
 module.exports = router

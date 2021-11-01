@@ -1,11 +1,11 @@
 const indexModel = require('../models/index.model')
 
-exports.create = await indexModel.create(...args)
+exports.create = indexModel.create
 
-exports.findAll = await indexModel.find(...args)
+exports.findAll = indexModel.find
 
-exports.findOne = await indexModel.findOne(...args)
+exports.findOne = indexModel.findOne
 
-exports.update = await indexModel.updateOne(...args)
+exports.update = indexModel.updateOne
 
-exports.delete = await indexModel.deleteOne(...args)
+exports.delete = indexModel.deleteOne
