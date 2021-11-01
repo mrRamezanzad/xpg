@@ -3,7 +3,7 @@
 ### Create  an app from scratch with ***Boilerplalte*** or  ***Generate services and controllers*** by simple ***CLI commands***  based on latest conventions of coding.  
 
 
-   We have tried our best to use Restful conventions in our boilerplate and codes.
+   We have tried our best to use Restful conventions in our boilerplate and codes.  
 ![boilerplate](screenshots/boilerplate.jpg)
 
 ## Features
@@ -21,14 +21,19 @@
 ## CLI Commands
   - makes a new app  `xpg -n [app name]`
     > this command will create a complete project based on model-view-controller and services which is api based and all layers are seperated.
-  - makes both controller and service `xpg [model name]`  
-  - generate controller `xpg -c [controller name]`
-  - generate service `xpg -s [service name]`
+
+  - makes both controller and service `xpg [model name]`    
+  
+  - generate controller `xpg -c [controller name]`    
+    ![controller](screenshots/controller.jpg)
+   
+  - generate service `xpg -s [service name]`    
+    ![controller](screenshots/service.jpg)  
   > `xpg -h` will show a list of commands .
 
 ## Async Handler
   - async handler function will wrap all controllers so you will never need to use try-catch in any of your express apps.  
-    ![async handler](screenshots/async-handler.jpg)  
+    ![async handler](screenshots/async-usage.jpg)  
  
 ## Error Handling System
   - very flexible error handling system.    
@@ -55,11 +60,12 @@
   ![configs](screenshots/configs.jpg)
   - other pre configurations like: 
     - session & cookie parser
+    - mongodb database connection by mongoose
     - logger for routes that uses `morgan`
     - `EJS` view engine
     - static files directory in `public` folder 
     - extended `urlencoded`  
-![extra configs](screenshots/extra-configs.jpg)
+![extra configs](screenshots/hidden-features.jpg)
 
 > note: this is an open source project, feel free to clone.  
 > if you have any suggestions we appreciate you make an issue.

@@ -4,4 +4,4 @@ const indexSchema = new Schema({
   name: String
 })
 
-module.exports = model('index', indexSchema)
+module.exports = model('Index', indexSchema)

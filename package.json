@@ -1,6 +1,6 @@
 {
   "name": "xpg",
-  "version": "1.1.1",
+  "version": "1.2.4",
   "description": "a module to help auto generating correct structure of rest services in express (model-view-controller-service).",
   "main": "index.js",
   "scripts": {

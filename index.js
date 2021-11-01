@@ -3,7 +3,7 @@ const fs = require('fs-extra')
 
 const yargs = require('yargs')
 
-const { generateRest, copyFolderSync } = require('./tools/index')
+const { generateRest, generateService, generateController } = require('./tools/index')
 
 const argv = yargs
   .command(
@@ -43,24 +43,11 @@ const argv = yargs
 // console.log(argv)
 
 if (argv['n']) return fs.copySync(join(__dirname, 'boilerplate'), `./${argv['n']}`)
+
 if (!argv['c'] && !argv['s']) return generateRest(argv._[0])
 
-// const generateService = (name) => {
-//   console.log('i will create a service for you named: ', argv.s)
-// }
-// if (argv['s']) {
-//   generateService()
-//   // const servicesExists = existsSync(join(__dirname, 'services'))
-//   // if (!servicesExists) mkdirSync(join(__dirname, 'services'))
-// }
+if (argv['s']) return generateService(argv.s)
 
-// const generateController = (name) => {
-//   console.log('i will create a controller for you named: ', name)
-// }
-// if (argv['c']) {
-//   generateController(argv.c)
-//   //   const controllersExists = existsSync(join(__dirname, 'controllers'))
-//   //   if (!controllersExists) mkdirSync(join(__dirname, 'controllers'))
-// }
+if (argv['c']) generateController(argv.c)
 
 module.exports = {}

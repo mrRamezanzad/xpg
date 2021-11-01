@@ -11,7 +11,8 @@ router
   }))
 
   .get('/indexs', asyncHandler(async (req, res, next) => {
-    await indexService.findAll()
+    const results = await indexService.findAll()
+    res.send(results)
   }))
 
   .get('/indexs/:id', asyncHandler(async (req, res, next) => {
