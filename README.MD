@@ -18,6 +18,9 @@
   - pre configed **dotenv structure** to bring environment variables.   
   -  and more **hidden features** like `async handler`.
   
+## Installation  
+In your Terminal/CMD enter `npm i -g xpg` then you can use this package anywhere by CLI commands.
+
 ## CLI Commands
   - makes a new app  `xpg -n [app name]`
     > this command will create a complete project based on model-view-controller and services which is api based and all layers are seperated.
